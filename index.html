@@ -524,14 +524,14 @@
         </tr>
       </tbody>
     </table>
-    <br>
+    <br><br>
   </div>
 </div>
 
 
 <div id="results" style='background-color: rgb(243, 242, 242)'>
   <br>
-  <h2 class="tldr" style="font-size: 24px;">DreamMotion with Show-1 (Cascaded Video Diffusion Model)</h2>
+  <h2 class="tldr" style="font-size: 24px;">DreamMotion with Show-1 Cascaded T2V</h2>
 
   <table style="width: 75%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
     <tbody>
@@ -628,21 +628,243 @@
     </tbody>
   </table>
   <br>
-
-
   <br>
 </div>
+
+<div id="results" style='background-color: rgb(255, 255, 255)'>
+  <br>
+  <h2 class="tldr" style="font-size: 24px;">Comparison to Baselines</h2>
+  <div style="text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size: 17px;">
+    <h3>A dog is jumping into a river. &#129034; A <u>horse</u> is jumping into a river.</h3>
+    <br>
+  </div>
+    <table style="width: 55%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <img src="static/gifs/zeroscope/dog_jump/input.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope/dog_jump/horse.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/dog_jump/tav.gif" width="240">
+
+          <div style="font-family: sans-serif; font-weight: bold;">
+            Tune-A-Video <br> &nbsp;
+          </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/dog_jump/cv.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo <br> &nbsp;
+            </div>
+        </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/dog_jump/cav.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Control-A-Video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/dog_jump/gen1.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Gen-1
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/dog_jump/tf.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              TokenFlow
+            </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
+
+  <div style="text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size: 17px;">
+    <h3>A seagull is walking. &#129034; A <u>duck</u> is walking on the mud.</h3>
+    <br>
+  </div>
+    <table style="width: 55%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <img src="static/gifs/teaser/seagull_walking/input.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/teaser/seagull_walking/duck_mud.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/seagull_walking/tav.gif" width="240">
+
+          <div style="font-family: sans-serif; font-weight: bold;">
+            Tune-A-Video <br> &nbsp;
+          </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/seagull_walking/cv.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo <br> &nbsp;
+            </div>
+        </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/seagull_walking/cav.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Control-A-Video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/seagull_walking/gen1.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Gen-1
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/seagull_walking/tf.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              TokenFlow
+            </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
+
+  <div style="text-align: center; font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size: 17px;">
+    <h3>A car is driving on the road. &#129034; A <u>lamborghini</u> is walking is driving on the road, <u>on sunset</u>.</h3>
+    <br>
+  </div>
+    <table style="width: 55%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <img src="static/gifs/zeroscope/car_turn/input.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope/car_turn/lamborghini_sunset.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/car_turn/tav.gif" width="240">
+
+          <div style="font-family: sans-serif; font-weight: bold;">
+            Tune-A-Video <br> &nbsp;
+          </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/car_turn/cv.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              ControlVideo <br> &nbsp;
+            </div>
+        </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/car_turn/cav.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Control-A-Video
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/car_turn/gen1.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              Gen-1
+            </div>
+        </th>
+        <th>
+          <img src="static/gifs/zeroscope_comparison/car_turn/tf.gif" width="240">
+
+            <div style="font-family: sans-serif; font-weight: bold;">
+              TokenFlow
+            </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
+</div>
+
 
 
 <br><br>
   <h2 class="tldr" style="font-size: 20px;">References</h2>
   <div style="padding-left:340px;">
+  
   <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
-    - Sterling, Spencer. <b>Zeroscope</b>. <a href="https://huggingface.co/cerspense/zeroscope_v2_576w"><i>https://huggingface.co/cerspense/zeroscope_v2_576w</i></a> (2023).
+    &#x2022; Sterling, Spencer. <b>Zeroscope</b>. <a href="https://huggingface.co/cerspense/zeroscope_v2_576w"><i>https://huggingface.co/cerspense/zeroscope_v2_576w</i></a> (2023).
   </P>
+
   <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
-    - Zhang, David Junhao, et al. "<b>Show-1</b>: Marrying pixel and latent diffusion models for text-to-video generation." arXiv preprint arXiv:2309.15818 (2023).
+    &#x2022; Zhang, David Junhao, et al. "<b>Show-1</b>: Marrying pixel and latent diffusion models for text-to-video generation." arXiv preprint arXiv:2309.15818 (2023).
   </P>
+  
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Wu, Jay Zhangjie, et al. "<b>Tune-a-video</b>: One-shot tuning of image diffusion models for text-to-video generation." Proceedings of the IEEE/CVF International Conference on Computer Vision (2023).
+  </P>
+
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Zhang, Yabo, et al. "<b>Controlvideo</b>: Training-free controllable text-to-video generation." arXiv preprint arXiv:2305.13077 (2023).
+  </P>
+
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Chen, Weifeng, et al. "<b>Control-a-video</b>: Controllable text-to-video generation with diffusion models." arXiv preprint arXiv:2305.13840 (2023).
+  </P>
+
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Esser, Patrick, et al. "Structure and content-guided video synthesis with diffusion models." Proceedings of the IEEE/CVF International Conference on Computer Vision (2023).
+  </P>
+
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Geyer, Michal, et al. "<b>Tokenflow</b>: Consistent diffusion features for consistent video editing." arXiv preprint arXiv:2307.10373 (2023).
+  </P>
+
+  <P style="text-align: left; font-family: sans-serif; font-weight: 500;">
+    &#x2022; Jeong, Hyeonho, et al. "<b>VMC</b>: Video Motion Customization using Temporal Attention Adaption for Text-to-Video Diffusion Models." arXiv preprint arXiv:2312.00845 (2023).
+  </P>
+
   </div>
   <br>
 
