@@ -415,7 +415,7 @@
       <tbody>
         <tr>
           <th>
-            <img src="static/gifs/zeroscope/dog_walking/input.gif" width="150">
+            <img src="static/gifs/zeroscope/dog_walking/input.gif" width="220">
 
               <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
                 Input video
@@ -425,21 +425,7 @@
             &nbsp;&nbsp;&nbsp;
           </th>
           <th>
-            <img src="static/gifs/zeroscope/dog_walking/spiderman.gif" width="150">
-
-            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
-              Man &#129034; Spider Man
-            </div>
-          </th>
-          <th>
-            <img src="static/gifs/zeroscope/dog_walking/superman.gif" width="150">
-
-            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
-              Man &#129034; Superman
-            </div>
-          </th>
-          <th>
-            <img src="static/gifs/zeroscope/dog_walking/corgi_child.gif" width="150">
+            <img src="static/gifs/zeroscope/dog_walking/corgi_child.gif" width="220">
 
               <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
                 Man &#129034; Child <br>
@@ -447,7 +433,7 @@
               </div>
           </th>
           <th>
-            <img src="static/gifs/zeroscope/dog_walking/pig_child.gif" width="150">
+            <img src="static/gifs/zeroscope/dog_walking/pig_child.gif" width="220">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
               Man &#129034; Child <br>
@@ -455,7 +441,7 @@
             </div>
           </th>
           <th>
-            <img src="static/gifs/zeroscope/dog_walking/goat_woman.gif" width="150">
+            <img src="static/gifs/zeroscope/dog_walking/goat_woman.gif" width="220">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
               Man &#129034; Woman <br>
@@ -463,7 +449,7 @@
             </div>
           </th>
           <th>
-            <img src="static/gifs/zeroscope/dog_walking/tiger_woman.gif" width="150">
+            <img src="static/gifs/zeroscope/dog_walking/tiger_woman.gif" width="220">
 
             <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
               Man &#129034; Woman <br>
@@ -654,7 +640,7 @@
           <img src="static/gifs/zeroscope/dog_jump/horse.gif" width="240">
 
             <div style="font-family: sans-serif; font-weight: bold;">
-              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+              <font color="MediumSeaGreen">Dream</font><font color="SeaGreen">Motion</font> w/ Zeroscope <br> &nbsp;
             </div>
         </th>
         <th>
@@ -718,7 +704,7 @@
           <img src="static/gifs/teaser/seagull_walking/duck_mud.gif" width="240">
 
             <div style="font-family: sans-serif; font-weight: bold;">
-              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+              <font color="MediumSeaGreen">Dream</font><font color="SeaGreen">Motion</font> w/ Zeroscope <br> &nbsp;
             </div>
         </th>
         <th>
@@ -782,7 +768,7 @@
           <img src="static/gifs/zeroscope/car_turn/lamborghini_sunset.gif" width="240">
 
             <div style="font-family: sans-serif; font-weight: bold;">
-              <span class="grad">Ours (w/ Zeroscope)</span> <br> &nbsp;
+              <font color="MediumSeaGreen">Dream</font><font color="SeaGreen">Motion</font> w/ Zeroscope <br> &nbsp;
             </div>
         </th>
         <th>
@@ -827,6 +813,295 @@
     </tbody>
   </table>
   <br><br>
+</div>
+
+
+
+<div id="results" style='background-color: rgb(243, 242, 242)'>
+  <br>
+  <h2 class="tldr" style="font-size: 24px;">Ablation: <span class="tldr" style="font-size: 21px;">Appearnce Injection with/without Space-Time Self-Similarity</span></h2>
+  <!-- <h3 class="teaser" style="font-size: 20px; text-align: center;">Appearnce Injection with/without Space-Time Self-Similarity</h3> -->
+  <table style="width: 60%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <div>
+            &nbsp;
+          </div>
+          <img src="static/gifs/zeroscope/dog_walking/input.gif" width="214">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          &nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/zeroscope/dog_walking/spiderman.gif" width="214">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Spider Man
+            </div>
+        </th>
+        <th>
+          <div class="dnerf">
+            $\mathcal{L}_{\text{V-DDS}}$ only
+          </div>
+          <img src="static/gifs/ablation/dog_walking/without_st/spiderman.gif" width="214">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Spider Man
+          </div>
+        </th>
+        <th>
+          &nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/zeroscope/dog_walking/superman.gif" width="214">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Superman
+          </div>
+        </th>
+        <th>
+          <div class="dnerf">
+            $\mathcal{L}_{\text{V-DDS}}$ only
+          </div>
+          <img src="static/gifs/ablation/dog_walking/without_st/superman.gif" width="214">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Superman
+          </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <div>
+            &nbsp;
+          </div>
+          <img src="static/gifs/ablation/bird_forest/input.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          &nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s_t/flamingo.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Flamingo
+            </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s/flamingo.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Flamingo
+          </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds/flamingo.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Flamingo<br>&nbsp;
+          </div>
+        </th>
+      </tr>
+
+      <tr>
+        <th>
+        </th>
+        <th>
+          &nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s_t/eagle.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Eagle
+            </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s/eagle.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Eagle
+          </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds/eagle.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Eagle <br>&nbsp;
+          </div>
+        </th>
+      </tr>
+
+      <tr>
+        <th>
+        </th>
+        <th>
+          &nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s_t/chicken.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Chicken
+            </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds_s/chicken.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Chicken
+          </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}}$
+          </div>
+          <img src="static/gifs/ablation/bird_forest/vdds/chicken.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Chicken
+          </div>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <table style="width: 58%;margin-left:auto;margin-right:auto; text-align: center; border-spacing: 4px; border-collapse: separate; ">
+    <tbody>
+      <tr>
+        <th>
+          <div>
+            &nbsp;
+          </div>
+          <img src="static/gifs/ablation/rabbit/input.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold;">
+              Input video
+            </div>
+        </th>
+        <th>
+          &nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds_s_t/corgi.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Corgi
+            </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds_s/corgi.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Corgi
+          </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds/corgi.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Corgi<br>&nbsp;
+          </div>
+        </th>
+      </tr>
+
+      <!-- <tr>
+        <th>
+        </th>
+        <th>
+          &nbsp;&nbsp;&nbsp;
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}} + \mathcal{L}_{\text{T-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds_s_t/rat.gif" width="260">
+
+            <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+              &#129034; Rat
+            </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}} + \mathcal{L}_{\text{S-SSM}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds_s/rat.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Rat
+          </div>
+        </th>
+        <th>
+          <div class="dnerf" style="font-size: 17px;">
+            $\mathcal{L}_{\text{V-DDS}}$
+          </div>
+          <img src="static/gifs/ablation/rabbit/vdds/rat.gif" width="260">
+
+          <div style="font-family: 'Segoe Print', sans-serif; font-weight: bold; font-size:14px;">
+            &#129034; Rat
+          </div>
+        </th>
+      </tr> -->
+    </tbody>
+  </table>
+
+
+  <br>
 </div>
 
 
